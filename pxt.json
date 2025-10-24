@@ -1,0 +1,33 @@
+{
+    "name": "fwd-coding-for-good",
+    "version": "0.0.0",
+    "description": "Forward Education's Coding For Good Kit extension, micro:bit V2 only.",
+    "license": "MIT",
+    "dependencies": {
+        "fwd-dial": "github:Forward-Education/pxt-fwd-modules/fwd-dial#v1.0.10",
+        "fwd-led-ring": "github:Forward-Education/pxt-fwd-modules/fwd-led-ring#v1.0.10",
+        "fwd-line": "github:Forward-Education/pxt-fwd-modules/fwd-line#v1.0.10",
+        "fwd-moisture": "github:Forward-Education/pxt-fwd-modules/fwd-moisture#v1.0.10",
+        "fwd-pump": "github:Forward-Education/pxt-fwd-modules/fwd-pump#v1.0.10",
+        "fwd-servo-continuous": "github:Forward-Education/pxt-fwd-modules/fwd-servo-continuous#v1.0.10",
+        "fwd-servo-positional": "github:Forward-Education/pxt-fwd-modules/fwd-servo-positional#v1.0.10",
+        "fwd-solar": "github:Forward-Education/pxt-fwd-modules/fwd-solar#v1.0.10",
+        "fwd-sonar": "github:Forward-Education/pxt-fwd-modules/fwd-sonar#v1.0.10",
+        "fwd-touch": "github:Forward-Education/pxt-fwd-modules/fwd-touch#v1.0.10"
+    },
+    "files": [
+        "README.md"
+    ],
+    "testFiles": [
+        "tests/test.ts"
+    ],
+    "public": true,
+    "targetVersions": {
+        "target": "8.0.15",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj"
+}
