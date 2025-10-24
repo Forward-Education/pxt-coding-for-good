@@ -4,16 +4,20 @@
     "description": "Forward Education's Coding For Good Kit extension, micro:bit V2 only.",
     "license": "MIT",
     "dependencies": {
-        "fwd-dial": "github:Forward-Education/pxt-fwd-modules/fwd-dial#v1.0.10",
-        "fwd-led-ring": "github:Forward-Education/pxt-fwd-modules/fwd-led-ring#v1.0.10",
-        "fwd-line": "github:Forward-Education/pxt-fwd-modules/fwd-line#v1.0.10",
-        "fwd-moisture": "github:Forward-Education/pxt-fwd-modules/fwd-moisture#v1.0.10",
-        "fwd-pump": "github:Forward-Education/pxt-fwd-modules/fwd-pump#v1.0.10",
-        "fwd-servo-continuous": "github:Forward-Education/pxt-fwd-modules/fwd-servo-continuous#v1.0.10",
-        "fwd-servo-positional": "github:Forward-Education/pxt-fwd-modules/fwd-servo-positional#v1.0.10",
-        "fwd-solar": "github:Forward-Education/pxt-fwd-modules/fwd-solar#v1.0.10",
-        "fwd-sonar": "github:Forward-Education/pxt-fwd-modules/fwd-sonar#v1.0.10",
-        "fwd-touch": "github:Forward-Education/pxt-fwd-modules/fwd-touch#v1.0.10"
+        "fwd-dial": "github:Forward-Education/pxt-fwd-modules/fwd-dial#a205e9305c640b5779be40049f8e22fc28cde456",
+        "fwd-led-ring": "github:Forward-Education/pxt-fwd-modules/fwd-led-ring#a205e9305c640b5779be40049f8e22fc28cde456",
+        "fwd-line": "github:Forward-Education/pxt-fwd-modules/fwd-line#a205e9305c640b5779be40049f8e22fc28cde456",
+        "fwd-moisture": "github:Forward-Education/pxt-fwd-modules/fwd-moisture#a205e9305c640b5779be40049f8e22fc28cde456",
+        "fwd-pump": "github:Forward-Education/pxt-fwd-modules/fwd-pump#a205e9305c640b5779be40049f8e22fc28cde456",
+        "fwd-servo-continuous": "github:Forward-Education/pxt-fwd-modules/fwd-servo-continuous#a205e9305c640b5779be40049f8e22fc28cde456",
+        "fwd-servo-positional": "github:Forward-Education/pxt-fwd-modules/fwd-servo-positional#a205e9305c640b5779be40049f8e22fc28cde456",
+        "fwd-solar": "github:Forward-Education/pxt-fwd-modules/fwd-solar#a205e9305c640b5779be40049f8e22fc28cde456",
+        "fwd-sonar": "github:Forward-Education/pxt-fwd-modules/fwd-sonar#a205e9305c640b5779be40049f8e22fc28cde456",
+        "fwd-touch": "github:Forward-Education/pxt-fwd-modules/fwd-touch#a205e9305c640b5779be40049f8e22fc28cde456",
+        "fwd-color": "github:Forward-Education/pxt-fwd-modules/fwd-color#a205e9305c640b5779be40049f8e22fc28cde456",
+        "fwd-pir": "github:Forward-Education/pxt-fwd-modules/fwd-pir#a205e9305c640b5779be40049f8e22fc28cde456",
+        "fwd-lcd": "github:Forward-Education/pxt-fwd-modules/fwd-lcd#a205e9305c640b5779be40049f8e22fc28cde456",
+        "fwd-temperature": "github:Forward-Education/pxt-fwd-modules/fwd-temperature#a205e9305c640b5779be40049f8e22fc28cde456"
     },
     "files": [
         "README.md"
@@ -23,7 +27,7 @@
     ],
     "public": true,
     "targetVersions": {
-        "target": "8.0.15",
+        "target": "8.0.17",
         "targetId": "microbit"
     },
     "supportedTargets": [
