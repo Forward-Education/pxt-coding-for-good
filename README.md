@@ -2,7 +2,7 @@
 
 Coding For Good Kit, by Forward Education.
 
-Find us at [forwardedu.com](https://forwardedu.com/) and [learn.forwardedu.com](https://learn.forwardedu.com/). Learn more about the Coding For Good Kit on the [product page](https://forwardedu.com/collections/robotics-platform#Shop-Robotics).
+Find us at [forwardedu.com](https://forwardedu.com/) and [learn.forwardedu.com](https://learn.forwardedu.com/). Learn more about the Coding For Good Kit on the [product page](https://forwardedu.com/products/coding-for-good-kit?pb=0).
 
 ### ~ reminder
 
@@ -33,7 +33,7 @@ basic.forever(function () {
 })
 ```
 
-Temperature can be reported and classified in real-time using the temperature probe and LCD display. Every second the temperature reading is printed on line 1 of the LCD. The reading is then classified using references to the natural environment and that classification is printed on line 2 of the LCD. The LCD is initialized at the start of the program, which delays execution while things get set up behind the scenes.
+Temperature can be reported and classified in real-time using the temperature probe and LCD display. Every second, the temperature reading is printed on line 1 of the LCD. The reading is then classified using references to the natural environment and that classification is printed on line 2 of the LCD. The LCD is initialized at the start of the program, which delays execution while things get set up behind the scenes.
 
 ```blocks
 fwdSensors.initializeLcd()
