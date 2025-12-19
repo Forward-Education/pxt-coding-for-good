@@ -1,6 +1,6 @@
 {
     "name": "fwd-coding-for-good",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "description": "Forward Education's Coding For Good Kit extension, micro:bit V2 only.",
     "license": "MIT",
     "dependencies": {
