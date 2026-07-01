@@ -20,7 +20,10 @@
         "fwd-temperature": "github:Forward-Education/pxt-fwd-modules/fwd-temperature#v1.0.13"
     },
     "files": [
-        "README.md"
+        "README.md",
+        "curriculum/general-assets/blank-coding-for-good-project.md",
+        "curriculum/lessons/field-station/use-tutorial.md",
+        "curriculum/lessons/field-station/modify-tutorial.md"
     ],
     "testFiles": [
         "tests/test.ts"
