@@ -24,6 +24,8 @@
         "curriculum/general-assets/blank-coding-for-good-project.md",
         "curriculum/lessons/field-station/use-tutorial.md",
         "curriculum/lessons/field-station/modify-tutorial.md",
+        "curriculum/lessons/avalanche-beacon/use-tutorial.md",
+        "curriculum/lessons/avalanche-beacon/modify-tutorial.md",
         "tutorial-info-cache.json"
     ],
     "testFiles": [
