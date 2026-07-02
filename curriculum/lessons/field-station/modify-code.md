@@ -4,7 +4,7 @@
 fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.3
 ```
 
-```template
+```blocks
 input.onSound(DetectedSound.Loud, function () {
     radio.sendString("Loud")
 })
@@ -30,6 +30,3 @@ basic.forever(function () {
     )
 })
 ```
-
-## 
-This is a finished coding project, click ``|Done|`` to edit this code
