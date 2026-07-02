@@ -1,7 +1,7 @@
 # Field Station – Use Tutorial
 
 ```package
-fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good
+fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.3
 ```
 
 ```template
@@ -46,13 +46,23 @@ This project uses two micro:bits that work as a team.
 
 * The **Field Station** receives the messages and lights up the ``||fwdLights:LED Ring||``
 
+## Setup: Small Screens
+
+To use this tutorial with a small screen, hover over the grey bar, then click and drag to expand the instruction window. 
+
+<img src="https://raw.githubusercontent.com/Forward-Education/pxt-coding-for-good/main/general-assets/connect/tutorial-drag.webp" alt="While hovering over the grey bar, click and drag to expand the instruction window." style="display: block; width: 100%; margin:auto;">
+
 ## Setup: Connect Cables
 
 IMPORTANT! Make sure your Field Station is assembled and the Breakout Board micro:bit is plugged into your computer. Keep your field micro:bit nearby.
 
+<img src="https://raw.githubusercontent.com/Forward-Education/pxt-coding-for-good/main/general-assets/connect/plugin-on.webp" alt="Connect USB cable to micro:bit and computer, turn breakout board on" style="display: block; width: 100%; margin:auto;">
+
 ## Setup: Download
 
 Click the ``|Download|`` button to download the starter code onto **both** micro:bits. Both devices need the same code.
+
+<img src="https://raw.githubusercontent.com/Forward-Education/pxt-coding-for-good/main/general-assets/connect/download-code.webp" alt="Click the download button in the bottom of your screen." style="display: block; width: 100%; margin:auto;">
 
 ## Identify: Events
 

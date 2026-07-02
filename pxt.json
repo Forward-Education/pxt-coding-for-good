@@ -22,9 +22,13 @@
     "files": [
         "README.md",
         "curriculum/general-assets/blank-coding-for-good-project.md",
+        "curriculum/lessons/field-station/use-code.md",
         "curriculum/lessons/field-station/use-tutorial.md",
+        "curriculum/lessons/field-station/modify-code.md",
         "curriculum/lessons/field-station/modify-tutorial.md",
+        "curriculum/lessons/avalanche-beacon/use-code.md",
         "curriculum/lessons/avalanche-beacon/use-tutorial.md",
+        "curriculum/lessons/avalanche-beacon/modify-code.md",
         "curriculum/lessons/avalanche-beacon/modify-tutorial.md",
         "tutorial-info-cache.json"
     ],
