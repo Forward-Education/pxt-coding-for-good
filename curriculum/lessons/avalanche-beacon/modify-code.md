@@ -1,10 +1,12 @@
 # Avalanche Beacon – Finished Modify Code
 
 ```package
-fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.3
+fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.4
 ```
 
-```template
+This is an example of the finished modify tutorial code. Select the "edit" button to customize this program or download it to your micro:bit. 
+
+```blocks
 radio.onReceivedString(function (receivedString) {
     lastReceived = input.runningTime()
     Signal = Math.map(radio.receivedPacket(RadioPacketProperty.SignalStrength), -128, -28, 0, 100)
@@ -33,6 +35,3 @@ basic.forever(function () {
     }
 })
 ```
-
-## 
-This is a finished coding project, click ``|Done|`` to edit this code

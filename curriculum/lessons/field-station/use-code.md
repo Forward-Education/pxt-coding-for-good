@@ -1,8 +1,10 @@
 # Field Station – Finished Use Code
 
 ```package
-fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.3
+fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.4
 ```
+
+This is an example of the finished use tutorial code. Select the "edit" button to customize this program or download it to your micro:bit. 
 
 ```template
 input.onSound(DetectedSound.Loud, function () {
