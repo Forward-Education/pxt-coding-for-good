@@ -1,7 +1,7 @@
 # Blank Coding for Good Kit Project - Forward Education
 
 ```package
-fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good
+fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.3
 ```
 
 ## 
