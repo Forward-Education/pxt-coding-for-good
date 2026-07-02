@@ -23,7 +23,7 @@ basic.forever(function () {
     255
     )
 })
-/* Reflect:
-Q1:
-Q2: */
 ```
+
+## 
+This is a finished coding project, click ``|Done|`` to edit this code

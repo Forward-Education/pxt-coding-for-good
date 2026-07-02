@@ -53,6 +53,7 @@ This project uses two micro:bits that work as a team.
 
 IMPORTANT! Make sure your project is assembled and the Breakout Board micro:bit is plugged into your computer. Keep your Search Device micro:bit nearby.
 
+
 ## Setup: Download
 
 Click the ``|Download|`` button to download the starter code onto **both** micro:bits. Both devices need the same code.

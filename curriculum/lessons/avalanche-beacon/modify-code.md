@@ -4,6 +4,7 @@
 fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.3
 ```
 
+```template
 radio.onReceivedString(function (receivedString) {
     lastReceived = input.runningTime()
     Signal = Math.map(radio.receivedPacket(RadioPacketProperty.SignalStrength), -128, -28, 0, 100)
@@ -31,3 +32,7 @@ basic.forever(function () {
         fwdSensors.lcd1.printQuadrantString(BeaconName, 4)
     }
 })
+```
+
+## 
+This is a finished coding project, click ``|Done|`` to edit this code
