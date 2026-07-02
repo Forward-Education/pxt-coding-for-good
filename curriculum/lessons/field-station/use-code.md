@@ -3,8 +3,8 @@
 ```package
 fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.4
 ```
-
-This is an example of the finished use tutorial code. Select the "edit" button to customize this program or download it to your micro:bit. 
+## 
+This is an example of the finished modify tutorial code. Use the blocks from the toolbox to make it your own.
 
 ```template
 input.onSound(DetectedSound.Loud, function () {
@@ -26,6 +26,3 @@ basic.forever(function () {
     )
 })
 ```
-
-## 
-This is a finished coding project, click ``|Done|`` to edit this code
