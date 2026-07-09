@@ -1,7 +1,7 @@
 # Structure Stress Test – Modify Tutorial
 
 ```package
-fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good
+fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.6
 ```
 
 ```template

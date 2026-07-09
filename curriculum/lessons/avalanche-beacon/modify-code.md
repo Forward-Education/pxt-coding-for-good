@@ -1,7 +1,7 @@
 # Avalanche Beacon – Finished Modify Code
 
 ```package
-fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.4
+fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.6
 ```
 
 ```template
