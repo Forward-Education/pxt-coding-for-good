@@ -3,8 +3,6 @@
 ```package
 fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.4
 ```
-## 
-This is an example of the finished modify tutorial code. Use the blocks from the toolbox to make it your own.
 
 ```template
 radio.onReceivedString(function (receivedString) {
@@ -28,6 +26,8 @@ basic.forever(function () {
         fwdSensors.lcd1.printQuadrantNumber(Math.round(Signal), 2)
     }
 })
+```
 
 ## 
+
 This is a finished coding project, click ``|Done|`` to edit this code
