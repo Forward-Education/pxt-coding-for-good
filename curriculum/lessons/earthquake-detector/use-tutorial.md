@@ -1,7 +1,7 @@
 # Earthquake Detector – Use Tutorial
 
 ```package
-fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.6
+fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.7
 datalogger
 ```
 
@@ -31,11 +31,11 @@ Q2:
 Q3: */
 ```
 
-## Seismic Logging @showdialog
+## Earthquake Detector - Use Tutorial @showdialog
 
-In this tutorial, you will **use** a program to explore how your Shake Intensity Logger works. Scientists use devices called seismographs to record how strongly and when the ground shakes during events like earthquakes and landslides. Your Shake Intensity Logger works the same way, using the micro:bit's accelerometer and a data log to record shaking strength and time together.
+In this tutorial, you will **use** a program to explore how your Earthquake Detector works. Civil engineers need real data about vibration and ground movement to decide whether a building or structure can survive an earthquake. Your Earthquake Detector works the same way, using the micro:bit's accelerometer and a data log to record shaking strength and time together.
 
-1. **Build**: Assemble the Shake Intensity Logger
+1. **Build**: Assemble the Earthquake Detector
 
 2. **Connect**: Pair your micro:bit and download the starter code
 
@@ -49,7 +49,7 @@ To use this tutorial with a small screen, hover over the grey bar, then click an
 
 ## Setup: Connect Cables @showdialog
 
-IMPORTANT! Make sure your Shake Intensity Logger is assembled and your micro:bit is plugged into your computer.
+IMPORTANT! Make sure your Earthquake Detector is assembled and your micro:bit is plugged into your computer.
 
 <img src="https://raw.githubusercontent.com/Forward-Education/pxt-coding-for-good/refs/heads/main/curriculum/general-assets/connect/plugin-on.webp" alt="Connect USB cable to micro:bit and computer, turn breakout board on" style="display: block; max-width: 400px; width: 100%; margin:auto;">
 
@@ -61,7 +61,7 @@ Click the ``|Download|`` button to download the starter code to your micro:bit.
 
 ## Identify: Components and Code
 
-Look at your Shake Intensity Logger. This **program** uses:
+Look at your Earthquake Detector. This **program** uses:
 
 * The micro:bit's built in accelerometer, which senses how hard the board is being moved or shaken
 
@@ -126,11 +126,11 @@ basic.forever(function () {
 })
 ```
 
-**Predict:** what will happen to the Strength number if you shake your Shake Intensity Logger hard, then hold it completely still?
+**Predict:** what will happen to the Strength number if you shake your Earthquake Detector hard, then hold it completely still?
 
 ## Test Your Prediction
 
-**Test** your prediction. Shake your Shake Intensity Logger firmly for a few seconds, then hold it completely still. Watch the ``||fwdSensors:LCD Display||``.
+**Test** your prediction. Shake your Earthquake Detector firmly for a few seconds, then hold it completely still. Watch the ``||fwdSensors:LCD Display||``.
 
 What did the Strength number do in each case?
 
@@ -159,7 +159,7 @@ basic.forever(function () {
 })
 ```
 
-**Predict:** what will happen to the Time number the longer your Shake Intensity Logger keeps running, even if you never touch a button?
+**Predict:** what will happen to the Time number the longer your Earthquake Detector keeps running, even if you never touch a button?
 
 ## Test Your Prediction
 
@@ -177,7 +177,7 @@ hint~
 
 ## Explore: View Your Logged Data
 
-Reconnect your Shake Intensity Logger to your computer with the USB cable. It will appear as a USB drive named **MICROBIT**.
+Reconnect your Earthquake Detector to your computer with the USB cable. It will appear as a USB drive named **MICROBIT**.
 
 Open the file named **MY_DATA** from that drive in a web browser.
 
@@ -205,15 +205,15 @@ hint~
 
 ## Investigate: What the Ground Is Telling You
 
-**Investigate:** using your Strength and Time readings as evidence, how could a real seismograph's data help scientists explain how strongly and when the ground shook during an event like an earthquake or a landslide?
+Using your Strength and Time readings as evidence, how could data like this help a civil engineer decide whether a structure built at this location needs extra reinforcement to survive an event like an earthquake or a landslide?
 
 ~hint Tell Me More!
 
-* Real seismographs log ground motion the same way your Shake Intensity Logger logs Strength, as a continuous stream of readings stamped with time
+* Real earthquake detectors log ground motion the same way your Earthquake Detector logs Strength, as a continuous stream of readings stamped with time
 
-* Comparing Strength values across many rows lets scientists find the exact moment shaking peaked and how long it lasted, evidence they use to explain what happened at a location
+* Comparing Strength values across many rows lets a civil engineer find the exact moment shaking peaked and how long it lasted, evidence they use to decide how strong a structure's foundation needs to be
 
-* Some geoscience processes, like earthquakes, happen suddenly. Others, like slow ground settling, happen gradually over days. A timestamped log can capture both kinds of change
+* Some geoscience processes, like earthquakes, happen suddenly. Others, like slow ground settling, happen gradually over days. A timestamped log can capture both kinds of change, information a civil engineer needs before deciding how to design for a location's risk
 
 hint~
 
@@ -225,7 +225,7 @@ In this tutorial, you used a **loop** and a **variable** to repeatedly sample sh
 
 2. What is one other piece of information the program could log alongside Strength and Time to make the data even more useful?
 
-3. How would a scientist studying an earthquake or landslide use logged Strength and Time evidence like yours to explain what happened at a location?
+3. How would a civil engineer use logged Strength and Time evidence like yours to decide whether a structure at that location needs to be reinforced?
 
 ## Congratulations!
 

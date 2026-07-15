@@ -1,7 +1,7 @@
 # Field Station – Use Tutorial
 
 ```package
-fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.6
+fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.7
 ```
 
 ```template
@@ -28,7 +28,7 @@ Q1:
 Q2: */
 ```
 
-## Sound the Alert @showdialog
+## Field Station - Use Tutorial @showdialog
 
 In this tutorial, you will **use** a program to explore how your Field Station works.
 
@@ -37,12 +37,6 @@ In this tutorial, you will **use** a program to explore how your Field Station w
 2. **Connect**: Pair your micro:bits and download the starter code
 
 3. **Use**: Run the program and explore the code
-
-## Setup: Small Screens @showdialog
-
-<img src="https://raw.githubusercontent.com/Forward-Education/pxt-coding-for-good/refs/heads/main/curriculum/general-assets/connect/tutorial-drag.webp" alt="While hovering over the grey bar, click and drag to expand the instruction window." style="display: block; max-width: 650px; width: 100%; margin:auto;">
-
-To use this tutorial with a small screen, hover over the grey bar, then click and drag to expand the instruction window. 
 
 ## Setup: Connect Cables @showdialog
 
@@ -55,6 +49,12 @@ IMPORTANT! Make sure your Field Station is assembled and the Breakout Board micr
 Click the ``|Download|`` button to download the starter code onto **both** micro:bits. Both devices need the same code.
 
 <img src="https://raw.githubusercontent.com/Forward-Education/pxt-coding-for-good/refs/heads/main/curriculum/general-assets/connect/download-code.webp" alt="Click the download button in the bottom of your screen." style="display: block; max-width: 650px; width: 100%; margin:auto;">
+
+## Setup: Small Screens @showdialog
+
+<img src="https://raw.githubusercontent.com/Forward-Education/pxt-coding-for-good/refs/heads/main/curriculum/general-assets/connect/tutorial-drag.webp" alt="While hovering over the grey bar, click and drag to expand the instruction window." style="display: block; max-width: 650px; width: 100%; margin:auto;">
+
+To use this tutorial with a small screen, hover over the grey bar, then click and drag to expand the instruction window. 
 
 ## Two-Device Setup
 

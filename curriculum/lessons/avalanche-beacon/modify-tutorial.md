@@ -1,7 +1,7 @@
 # Avalanche Beacon – Modify Tutorial
 
 ```package
-fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.6
+fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.7
 ```
 
 ```template
@@ -35,7 +35,7 @@ Q2:
 Q3: */
 ```
 
-## Send a Field Report @showdialog
+## Avalanche Beacon - Modify Tutorial @showdialog
 
 In this tutorial, you will **modify** the code to upgrade your beacon. Instead of just sending a signal, it will send a name so rescuers know which group needs help.
 
@@ -45,15 +45,9 @@ In this tutorial, you will **modify** the code to upgrade your beacon. Instead o
 
 3. **Modify**: Add a beacon name and test your upgraded system
 
-## Setup: Small Screens @showdialog
-
-<img src="https://raw.githubusercontent.com/Forward-Education/pxt-coding-for-good/refs/heads/main/curriculum/general-assets/connect/tutorial-drag.webp" alt="While hovering over the grey bar, click and drag to expand the instruction window." style="display: block; max-width: 650px; width: 100%; margin:auto;">
-
-To use this tutorial with a small screen, hover over the grey bar, then click and drag to expand the instruction window. 
-
 ## Setup: Connect Cables @showdialog
 
-IMPORTANT! Make sure your Field Station is assembled and the Breakout Board micro:bit is plugged into your computer. Keep your field micro:bit nearby.
+IMPORTANT! Make sure your project is assembled and the Breakout Board micro:bit is plugged into your computer. Keep your beacon micro:bit nearby.
 
 <img src="https://raw.githubusercontent.com/Forward-Education/pxt-coding-for-good/refs/heads/main/curriculum/general-assets/connect/plugin-on.webp" alt="Connect USB cable to micro:bit and computer, turn breakout board on" style="display: block; max-width: 400px; width: 100%; margin:auto;">
 
@@ -62,6 +56,13 @@ IMPORTANT! Make sure your Field Station is assembled and the Breakout Board micr
 Click the ``|Download|`` button to download the starter code onto **both** micro:bits. Both devices need the same code.
 
 <img src="https://raw.githubusercontent.com/Forward-Education/pxt-coding-for-good/refs/heads/main/curriculum/general-assets/connect/download-code.webp" alt="Click the download button in the bottom of your screen." style="display: block; max-width: 650px; width: 100%; margin:auto;">
+
+## Setup: Small Screens @showdialog
+
+<img src="https://raw.githubusercontent.com/Forward-Education/pxt-coding-for-good/refs/heads/main/curriculum/general-assets/connect/tutorial-drag.webp" alt="While hovering over the grey bar, click and drag to expand the instruction window." style="display: block; max-width: 650px; width: 100%; margin:auto;">
+
+To use this tutorial with a small screen, hover over the grey bar, then click and drag to expand the instruction window. 
+
 
 ## Two-Device Setup
 
@@ -112,13 +113,13 @@ The Search Device needs to store the beacon name sent from the Avalanche Beacon.
 
 Drag a ``||variables:Set BeaconName to||`` block inside ``||radio:On Received String||`` event. 
 
-Copy the round ``||variables:recievedString||`` block, and drag it into the empty string.
+Copy the round ``||variables:receivedString||`` block, and drag it into the empty string.
 
 ~hint Tell Me More!
 
-Every time a signal is sent from the Avalanche beacon, the ``||variables:beaconName||`` variable stores the name the beacon sent.
+Every time a signal is sent from the Avalanche beacon, the ``||variables:BeaconName||`` variable stores the name the beacon sent.
 
-Storing it in ``||variables:beaconName||`` means the ``||basic:Forever||`` loop can read and display it.
+Storing it in ``||variables:BeaconName||`` means the ``||basic:Forever||`` loop can read and display it.
 
 hint~
 
@@ -127,7 +128,7 @@ radio.onReceivedString(function (receivedString) {
     lastReceived = input.runningTime()
     Signal = Math.map(radio.receivedPacket(RadioPacketProperty.SignalStrength), -128, -28, 0, 100)
     // @highlight
-    beaconName = receivedString
+    BeaconName = receivedString
 })
 ```
 
@@ -162,11 +163,11 @@ basic.forever(function () {
 
 ## Modify: Show the Beacon Name
 
-Now display the ``||variables:beaconName||`` variable! 
+Now display the ``||variables:BeaconName||`` variable! 
 
 Drag another ``||fwdSensors: Print String on Quadrant||`` block into the ``||logic:Else||`` branch of the ``||basic:Forever||`` loop. 
 
-Drag a ``||variables:beaconName||`` block into the **string** field, and the set the quadrant to **4**
+Drag a ``||variables:BeaconName||`` block into the **string** field, and the set the quadrant to **4**
 
 ~hint Tell Me More!
 
@@ -185,7 +186,7 @@ basic.forever(function () {
         fwdSensors.lcd1.printQuadrantNumber(Math.round(Signal), 2)
         fwdSensors.lcd1.printQuadrantString("Beacon:", 3)
         // @highlight
-        fwdSensors.lcd1.printQuadrantString(beaconName, 4)
+        fwdSensors.lcd1.printQuadrantString(BeaconName, 4)
     }
 })
 ```
@@ -214,7 +215,7 @@ basic.forever(function () {
         fwdSensors.lcd1.printQuadrantString("Signal %", 1)
         fwdSensors.lcd1.printQuadrantNumber(Math.round(Signal), 2)
         fwdSensors.lcd1.printQuadrantString("Beacon:", 3)
-        fwdSensors.lcd1.printQuadrantString(beaconName, 4)
+        fwdSensors.lcd1.printQuadrantString(BeaconName, 4)
     }
 })
 ```
@@ -223,7 +224,7 @@ basic.forever(function () {
 
 You're ready to test your changes! ``|Download|`` your program to both your **Avalanche Beacon** and your **Search Device**. 
 
-Keep the field micro:bit close to the Field Station. Watch the ``||fwdSensors:LCD Display||``.
+Keep the beacon micro:bit close to the Search Device. Watch the ``||fwdSensors:LCD Display||``.
 
 Does **Group 1** appear on the bottom row?
 
@@ -231,7 +232,7 @@ Does **Group 1** appear on the bottom row?
 
 The **Avalanche Beacon** is now sending the name "Group 1" with every signal.
 
-The **Search Device** receives it and stores it in the ``||variables:beaconName||`` variable, then displays it on the ``||fwdSensors:LCD Screen||``.
+The **Search Device** receives it and stores it in the ``||variables:BeaconName||`` variable, then displays it on the ``||fwdSensors:LCD Screen||``.
 
 hint~
 
@@ -243,7 +244,7 @@ Does the name stay on screen as you move? What happens when you go too far?
 
 ~hint Tell Me More!
 
-As long as a ``||variables:Signal||`` from the **Avalanche Beacon** reaches the **Search Device** within 3 seconds, the ``||variables:beaconName||`` displays on the ``||fwdSensors:LCD Screen||``.
+As long as a ``||variables:Signal||`` from the **Avalanche Beacon** reaches the **Search Device** within 3 seconds, the ``||variables:BeaconName||`` displays on the ``||fwdSensors:LCD Screen||``.
 
 When the signal is lost, the ``||fwdSensors:LCD Screen||`` to "No Signal" and "No Beacon".
 
@@ -295,7 +296,7 @@ You've completed this tutorial! Here's a summary of what you modified:
 
 - ``||radio:On Received String||``: Updated to receive the group name from the Avalanche Beacon
 
-- ``||fwdSensors:LCD Screen||``: Now shows the ``||variables:beaconName||`` on the bottom row alongside the signal strength
+- ``||fwdSensors:LCD Screen||``: Now shows the ``||variables:BeaconName||`` on the bottom row alongside the signal strength
 
 - ``||logic:If||``: Updated so "No Beacon" appears when the signal is lost
 

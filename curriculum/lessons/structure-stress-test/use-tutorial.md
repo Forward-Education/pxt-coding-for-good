@@ -1,12 +1,12 @@
 # Structure Stress Test – Use Tutorial
 
 ```package
-fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.6
+fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.7
 ```
 
 ```template
 function TableTrue () {
-    TableOn = true
+    tableOn = true
     shakeStart = input.runningTime()
     fwdSensors.lcd1.printLineString("Table On", 2)
 }
@@ -17,7 +17,7 @@ fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Counterclockwise, 
     TableTrue()
 })
 fwdButtons.dialButton1.onEvent(jacdac.ButtonEvent.Down, function () {
-    TableOn = false
+    tableOn = false
     shakeDuration = Math.round((input.runningTime() - shakeStart) / 1000)
     fwdSensors.lcd1.printLineString("Shook: " + shakeDuration + "s", 2)
 })
@@ -27,15 +27,15 @@ function Shake () {
     fwdMotors.setSpeed(fwdBase.leftServo, -100)
     basic.pause(100)
 }
-let TableOn = false
+let tableOn = false
 let shakeStart = 0
 let shakeDuration = 0
 fwdSensors.initializeLcd()
-TableOn = false
+tableOn = false
 fwdMotors.setSpeed(fwdBase.leftServo, 0)
 basic.pause(1000)
 basic.forever(function () {
-    if (TableOn) {
+    if (tableOn) {
         Shake()
     } else {
         fwdMotors.setSpeed(fwdBase.leftServo, 0)
@@ -46,25 +46,19 @@ Q1:
 Q2: */
 ```
 
-## Vibration Tables @showdialog
+## Structure Stress Test - Use Tutorial @showdialog
 
-In this tutorial, you will **use** a program to explore how your Vibration Table works. Later, you will combine this table with the accelerometer project you already built to measure whether a structure amplifies or dampens vibration. For now, focus on how the table turns on, shakes at a steady speed, and turns back off.
+In this tutorial, you will **use** a program to explore how your Stress Test works. You'll learn how the table turns on, shakes at a steady speed, and how to turn it off.
 
-1. **Build**: Assemble the Vibration Table
+1. **Build**: Assemble the Structure Stress Test
 
 2. **Connect**: Pair your micro:bit and download the starter code
 
 3. **Use**: Run the program and control the table
 
-## Setup: Small Screens @showdialog
-
-<img src="https://raw.githubusercontent.com/Forward-Education/pxt-coding-for-good/refs/heads/main/curriculum/general-assets/connect/tutorial-drag.webp" alt="While hovering over the grey bar, click and drag to expand the instruction window." style="display: block; max-width: 650px; width: 100%; margin:auto;">
-
-To use this tutorial with a small screen, hover over the grey bar, then click and drag to expand the instruction window.
-
 ## Setup: Connect Cables @showdialog
 
-IMPORTANT! Make sure your Vibration Table is assembled and your micro:bit is plugged into your computer.
+IMPORTANT! Make sure your Structure Stress Test is assembled and your micro:bit is plugged into your computer.
 
 <img src="https://raw.githubusercontent.com/Forward-Education/pxt-coding-for-good/refs/heads/main/curriculum/general-assets/connect/plugin-on.webp" alt="Connect USB cable to micro:bit and computer, turn breakout board on" style="display: block; max-width: 400px; width: 100%; margin:auto;">
 
@@ -74,9 +68,15 @@ Click the ``|Download|`` button to download the starter code to your micro:bit.
 
 <img src="https://raw.githubusercontent.com/Forward-Education/pxt-coding-for-good/refs/heads/main/curriculum/general-assets/connect/download-code.webp" alt="Click the download button in the bottom of your screen." style="display: block; max-width: 650px; width: 100%; margin:auto;">
 
+## Setup: Small Screens @showdialog
+
+<img src="https://raw.githubusercontent.com/Forward-Education/pxt-coding-for-good/refs/heads/main/curriculum/general-assets/connect/tutorial-drag.webp" alt="While hovering over the grey bar, click and drag to expand the instruction window." style="display: block; max-width: 650px; width: 100%; margin:auto;">
+
+To use this tutorial with a small screen, hover over the grey bar, then click and drag to expand the instruction window.
+
 ## Identify: Components and Code
 
-Look at your Vibration Table. This **program** uses:
+Look at your Structure Stress Test. This **program** uses:
 
 * A ``||fwdButtons:Dial||`` that turns the table on when you rotate it, and off when you press it down
 
@@ -108,9 +108,9 @@ What shows on line 2, and has the table moved on its own?
 
 ~hint Tell Me More!
 
-* Line 2 is blank. Nothing has printed to it yet, because its text only gets written when you rotate or press the ``||fwdButtons:Dial||``
+* Line 2 is blank. Nothing has printed to it yet, because its text only gets written when you rotate or press the ``||fwdButtons:Dial||``.
 
-* The table has not moved, because ``||variables:TableOn||`` starts as false
+* The table has not moved, because ``||variables:tableOn||`` starts as false
 
 hint~
 
@@ -120,7 +120,7 @@ Find the ``TableTrue`` **function**.
 
 ```blocks
 function TableTrue () {
-    TableOn = true
+    tableOn = true
     // @highlight
     shakeStart = input.runningTime()
     fwdSensors.lcd1.printLineString("Table On", 2)
@@ -151,7 +151,7 @@ Find the ``||fwdButtons:On Button Event||`` block that fires when you press the 
 
 ```blocks
 fwdButtons.dialButton1.onEvent(jacdac.ButtonEvent.Down, function () {
-    TableOn = false
+    tableOn = false
     // @highlight
     shakeDuration = Math.round((input.runningTime() - shakeStart) / 1000)
     fwdSensors.lcd1.printLineString("Shook: " + shakeDuration + "s", 2)
@@ -200,11 +200,11 @@ hint~
 
 ## Reflect
 
-In this tutorial, you used two **functions** and three **variables** to control your Vibration Table and time how long it shook. Record your answers to the questions below as code comments in the workspace.
+In this tutorial, you used two **functions** and three **variables** to control your Structure Stress Test and time how long it shook. Record your answers to the questions below as code comments in the workspace.
 
 1. Why does the program record the moment the table starts shaking instead of only recording the moment it stops?
 
-2. Line 1 of the display is still blank. What do you think will be shown there once you add the accelerometer from your other project?
+2. Line 1 of the display is still blank. What's one thing you could show there if you added another sensor to this project?
 
 ## Congratulations!
 

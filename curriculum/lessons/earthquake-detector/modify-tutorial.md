@@ -1,7 +1,7 @@
 # Earthquake Detector – Modify Tutorial
 
 ```package
-fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.6
+fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.7
 datalogger
 ```
 
@@ -31,25 +31,19 @@ Q2:
 Q3: */
 ```
 
-## Seismic Sampling @showdialog
+## Earthquake Detector - Modify Tutorial @showdialog
 
-In this tutorial, you will **modify** the code to change how often your Shake Intensity Logger samples the ground, and to add a rule-based alert for a big shake.
+In this tutorial, you will **modify** the code to change how often your Earthquake Detector samples the ground, and to add a rule-based alert for a big shake.
 
-1. **Build**: Assemble the Shake Intensity Logger
+1. **Build**: Assemble the Earthquake Detector
 
 2. **Connect**: Pair your micro:bit and download the starter code
 
 3. **Modify**: Change the sampling rate and add a shake alert
 
-## Setup: Small Screens @showdialog
-
-<img src="https://raw.githubusercontent.com/Forward-Education/pxt-coding-for-good/refs/heads/main/curriculum/general-assets/connect/tutorial-drag.webp" alt="While hovering over the grey bar, click and drag to expand the instruction window." style="display: block; max-width: 650px; width: 100%; margin:auto;">
-
-To use this tutorial with a small screen, hover over the grey bar, then click and drag to expand the instruction window.
-
 ## Setup: Connect Cables @showdialog
 
-IMPORTANT! Make sure your Shake Intensity Logger is assembled and your micro:bit is plugged into your computer.
+IMPORTANT! Make sure your Earthquake Detector is assembled and your micro:bit is plugged into your computer.
 
 <img src="https://raw.githubusercontent.com/Forward-Education/pxt-coding-for-good/refs/heads/main/curriculum/general-assets/connect/plugin-on.webp" alt="Connect USB cable to micro:bit and computer, turn breakout board on" style="display: block; max-width: 400px; width: 100%; margin:auto;">
 
@@ -58,6 +52,12 @@ IMPORTANT! Make sure your Shake Intensity Logger is assembled and your micro:bit
 Click the ``|Download|`` button to download the starter code to your micro:bit.
 
 <img src="https://raw.githubusercontent.com/Forward-Education/pxt-coding-for-good/refs/heads/main/curriculum/general-assets/connect/download-code.webp" alt="Click the download button in the bottom of your screen." style="display: block; max-width: 650px; width: 100%; margin:auto;">
+
+## Setup: Small Screens @showdialog
+
+<img src="https://raw.githubusercontent.com/Forward-Education/pxt-coding-for-good/refs/heads/main/curriculum/general-assets/connect/tutorial-drag.webp" alt="While hovering over the grey bar, click and drag to expand the instruction window." style="display: block; max-width: 650px; width: 100%; margin:auto;">
+
+To use this tutorial with a small screen, hover over the grey bar, then click and drag to expand the instruction window.
 
 ## Explore: How the Program Works
 
@@ -105,7 +105,7 @@ basic.forever(function () {
 
 Change the ``||basic:Pause||`` value from 1000 to **2000** (2 seconds). Download your program, then tap the micro:bit sharply once and let go.
 
-Does your Shake Intensity Logger catch that tap, or does it miss it?
+Does your Earthquake Detector catch that tap, or does it miss it?
 
 ~hint Tell Me More!
 
@@ -198,7 +198,7 @@ Add an **else** branch to your conditional. Inside it, add a ``||basic:Show Leds
 
 ~hint Tell Me More!
 
-* Now your Shake Intensity Logger shows one pattern for a big shake and a different pattern when things are calm
+* Now your Earthquake Detector shows one pattern for a big shake and a different pattern when things are calm
 
 * The ``||logic:If||`` **conditional** checks Strength every single time the loop runs, so the display always matches the most recent reading
 
@@ -245,7 +245,7 @@ if (strength > 1500) {
 
 ## Modify: Test It With a Partner
 
-Trade your Shake Intensity Logger with a partner. Without telling them your threshold, have them shake it at different strengths and predict, before each shake, whether the LEDs will show the alert pattern.
+Trade your Earthquake Detector with a partner. Without telling them your threshold, have them shake it at different strengths and predict, before each shake, whether the LEDs will show the alert pattern.
 
 Ask your partner for one piece of feedback: does 1500 feel like the right number for a "big" shake, or should it be higher or lower?
 
@@ -279,19 +279,19 @@ hint~
 
 * The rule-based ``||logic:If||`` conditional gives an immediate answer using one fixed number, useful when you need to react right away
 
-* The raw data saved by ``||datalogger:Log Data||`` keeps every reading, so it can be studied later for patterns that a single fixed threshold would miss entirely, the kind of closer look scientists use to understand an event after it happens
+* The raw data saved by ``||datalogger:Log Data||`` keeps every reading, so it can be studied later for patterns that a single fixed threshold would miss entirely, the kind of closer look a civil engineer uses to decide whether a structure needs reinforcement after an event.
 
 hint~
 
 ## Reflect
 
-In this tutorial, you **modified** a **variable** value and a **conditional** to change how your Shake Intensity Logger samples and responds to shaking. Record your answers to the questions below as code comments in the workspace.
+In this tutorial, you **modified** a **variable** value and a **conditional** to change how your Earthquake Detector samples and responds to shaking. Record your answers to the questions below as code comments in the workspace.
 
 1. Think about something in this project that was tricky. How did you figure it out?
 
 2. How did solving that challenge make you feel?
 
-3. What is one more thing you could do to improve your Shake Intensity Logger?
+3. What is one more thing you could do to improve your Earthquake Detector?
 
 ## Congratulations!
 

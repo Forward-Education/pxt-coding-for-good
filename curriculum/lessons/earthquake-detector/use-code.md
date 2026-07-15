@@ -1,7 +1,7 @@
 # Earthquake Detector – Finished Use Code
 
 ```package
-fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.6
+fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.7
 datalogger
 ```
 
@@ -19,7 +19,7 @@ let time = 0
 basic.forever(function () {
     strength = input.acceleration(Dimension.Strength)
     time = input.runningTime()
-    datalogger.log(datalogger.createCV("Stength", strength))
+    datalogger.log(datalogger.createCV("Strength", strength))
     fwdSensors.lcd1.printLineString("Strength: ", 1)
     fwdSensors.lcd1.printQuadrantNumber(strength, 2)
     fwdSensors.lcd1.printLineString("Time: ", 3)

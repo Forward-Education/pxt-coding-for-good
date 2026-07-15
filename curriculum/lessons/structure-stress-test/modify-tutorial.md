@@ -1,12 +1,12 @@
 # Structure Stress Test – Modify Tutorial
 
 ```package
-fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.6
+fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.7
 ```
 
 ```template
 function TableTrue () {
-    TableOn = true
+    tableOn = true
     shakeStart = input.runningTime()
     fwdSensors.lcd1.printLineString("Table On", 2)
 }
@@ -17,7 +17,7 @@ fwdButtons.dial1.onRotated(fwdEnums.ClockwiseCounterclockwise.Counterclockwise, 
     TableTrue()
 })
 fwdButtons.dialButton1.onEvent(jacdac.ButtonEvent.Down, function () {
-    TableOn = false
+    tableOn = false
     shakeDuration = Math.round((input.runningTime() - shakeStart) / 1000)
     fwdSensors.lcd1.printLineString("Shook: " + shakeDuration + "s", 2)
 })
@@ -27,15 +27,15 @@ function Shake () {
     fwdMotors.setSpeed(fwdBase.leftServo, -100)
     basic.pause(100)
 }
-let TableOn = false
+let tableOn = false
 let shakeStart = 0
 let shakeDuration = 0
 fwdSensors.initializeLcd()
-TableOn = false
+tableOn = false
 fwdMotors.setSpeed(fwdBase.leftServo, 0)
 basic.pause(1000)
 basic.forever(function () {
-    if (TableOn) {
+    if (tableOn) {
         Shake()
     } else {
         fwdMotors.setSpeed(fwdBase.leftServo, 0)
@@ -47,25 +47,19 @@ Q2:
 Q3: */
 ```
 
-## Turn Up the Shake @showdialog
+## Structure Stress Test - Modify Tutorial @showdialog
 
-In this tutorial, you will **modify** the code so the dial controls how hard your Vibration Table shakes, not just whether it shakes at all. Real earthquakes come in different magnitudes, and a testing table that can only shake one way can only ever tell you about one kind of earthquake.
+In this tutorial, you will **modify** the code so the dial controls how hard your Structure Stress Test shakes, not just whether it shakes at all. Real earthquakes come in different magnitudes, and a testing table that can only shake one way can only ever tell you about one kind of earthquake.
 
-1. **Build**: Assemble the Vibration Table
+1. **Build**: Assemble the Structure Stress Test
 
 2. **Connect**: Pair your micro:bit and download the starter code
 
 3. **Modify**: Add speed control and move the shake timer
 
-## Setup: Small Screens @showdialog
-
-<img src="https://raw.githubusercontent.com/Forward-Education/pxt-coding-for-good/refs/heads/main/curriculum/general-assets/connect/tutorial-drag.webp" alt="While hovering over the grey bar, click and drag to expand the instruction window." style="display: block; max-width: 650px; width: 100%; margin:auto;">
-
-To use this tutorial with a small screen, hover over the grey bar, then click and drag to expand the instruction window.
-
 ## Setup: Connect Cables @showdialog
 
-IMPORTANT! Make sure your Vibration Table is assembled and your micro:bit is plugged into your computer.
+IMPORTANT! Make sure your Structure Stress Test is assembled and your micro:bit is plugged into your computer.
 
 <img src="https://raw.githubusercontent.com/Forward-Education/pxt-coding-for-good/refs/heads/main/curriculum/general-assets/connect/plugin-on.webp" alt="Connect USB cable to micro:bit and computer, turn breakout board on" style="display: block; max-width: 400px; width: 100%; margin:auto;">
 
@@ -74,6 +68,12 @@ IMPORTANT! Make sure your Vibration Table is assembled and your micro:bit is plu
 Click the ``|Download|`` button to download the starter code to your micro:bit.
 
 <img src="https://raw.githubusercontent.com/Forward-Education/pxt-coding-for-good/refs/heads/main/curriculum/general-assets/connect/download-code.webp" alt="Click the download button in the bottom of your screen." style="display: block; max-width: 650px; width: 100%; margin:auto;">
+
+## Setup: Small Screens @showdialog
+
+<img src="https://raw.githubusercontent.com/Forward-Education/pxt-coding-for-good/refs/heads/main/curriculum/general-assets/connect/tutorial-drag.webp" alt="While hovering over the grey bar, click and drag to expand the instruction window." style="display: block; max-width: 650px; width: 100%; margin:auto;">
+
+To use this tutorial with a small screen, hover over the grey bar, then click and drag to expand the instruction window.
 
 ## Explore: How the Program Works
 
@@ -128,7 +128,7 @@ hint~
 
 ```blocks
 function TableTrue () {
-    TableOn = true
+    tableOn = true
     shakeStart = input.runningTime()
     // @highlight
     if (Math.abs(fwdButtons.dial1.position()) == 1) {
@@ -146,11 +146,13 @@ function TableTrue () {
 
 ## Modify: Show Table Off When Centered
 
-Add a final **else** branch to the same conditional. If the dial is back at its starting position, show "Table Off" instead of a speed.
+Add a final else branch to the same conditional. If the dial is back at its starting position, turn the table off and show "Table Off" instead of a speed.
 
 ~hint Tell Me More!
 
 * This covers the one case none of the other branches catch: the dial has not been turned away from its starting position yet
+
+* Setting tableOn to false here means the table actually stops, matching what the display says
 
 hint~
 
@@ -160,6 +162,7 @@ hint~
     fwdSensors.lcd1.printLineString("Speed 3", 2)
 // @highlight
 } else {
+    tableOn = false
     fwdSensors.lcd1.printLineString("Table Off", 2)
 }
 ```
@@ -176,7 +179,7 @@ hint~
 
 ```blocks
 fwdButtons.dialButton1.onEvent(jacdac.ButtonEvent.Down, function () {
-    TableOn = false
+    tableOn = false
     shakeDuration = Math.round((input.runningTime() - shakeStart) / 1000)
     // @highlight
     fwdSensors.lcd1.printLineString("Shook: " + shakeDuration + "s", 1)
@@ -229,7 +232,7 @@ hint~
 
 ## Investigate: Testing at Different Magnitudes
 
-**Investigate:** real earthquakes vary in magnitude, some mild, some severe. Based on what you just observed at Speed 1, 2, and 3, why is a Vibration Table with three speed tiers more useful for deciding on a safer building design than a table that could only shake one way?
+**Investigate:** real earthquakes vary in magnitude, some mild, some severe. Based on what you just observed at Speed 1, 2, and 3, why is a Structure Stress Test with three speed tiers more useful for deciding on a safer building design than a table that could only shake one way?
 
 ~hint Tell Me More!
 
@@ -241,13 +244,13 @@ hint~
 
 ## Reflect
 
-In this tutorial, you **modified** a **conditional** and a **variable** to give your Vibration Table three controllable speeds. Record your answers to the questions below as code comments in the workspace.
+In this tutorial, you **modified** a **conditional** and a **variable** to give your Structure Stress Test three controllable speeds. Record your answers to the questions below as code comments in the workspace.
 
 1. Think about something in this project that was tricky. How did you figure it out?
 
 2. How did solving that challenge make you feel?
 
-3. What is one more thing you could do to improve your Vibration Table?
+3. What is one more thing you could do to improve your Structure Stress Test?
 
 ## Congratulations!
 

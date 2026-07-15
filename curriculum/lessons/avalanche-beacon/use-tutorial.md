@@ -1,7 +1,7 @@
 # Avalanche Beacon – Use Tutorial
 
 ```package
-fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.6
+fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.7
 ```
 
 ```template
@@ -31,7 +31,7 @@ Q1:
 Q2: */
 ```
 
-## Track a Beacon @showdialog
+## Avalanche Beacon - Use Tutorial @showdialog
 
 In this tutorial, you will **use** a program to explore how your Avalanche System works.
 
@@ -41,15 +41,9 @@ In this tutorial, you will **use** a program to explore how your Avalanche Syste
 
 3. **Use**: Run the program and hunt the beacon
 
-## Setup: Small Screens @showdialog
+## Setup: Avalanche Beacon @showdialog
 
-<img src="https://raw.githubusercontent.com/Forward-Education/pxt-coding-for-good/refs/heads/main/curriculum/general-assets/connect/tutorial-drag.webp" alt="While hovering over the grey bar, click and drag to expand the instruction window." style="display: block; max-width: 650px; width: 100%; margin:auto;">
-
-To use this tutorial with a small screen, hover over the grey bar, then click and drag to expand the instruction window. 
-
-## Setup: Connect Cables @showdialog
-
-IMPORTANT! Make sure your Field Station is assembled and the Breakout Board micro:bit is plugged into your computer. Keep your field micro:bit nearby.
+IMPORTANT! Make sure your Search Device is assembled and the Breakout Board micro:bit is plugged into your computer. Keep your beacon micro:bit nearby.
 
 <img src="https://raw.githubusercontent.com/Forward-Education/pxt-coding-for-good/refs/heads/main/curriculum/general-assets/connect/plugin-on.webp" alt="Connect USB cable to micro:bit and computer, turn breakout board on" style="display: block; max-width: 400px; width: 100%; margin:auto;">
 
@@ -58,6 +52,12 @@ IMPORTANT! Make sure your Field Station is assembled and the Breakout Board micr
 Click the ``|Download|`` button to download the starter code onto **both** micro:bits. Both devices need the same code.
 
 <img src="https://raw.githubusercontent.com/Forward-Education/pxt-coding-for-good/refs/heads/main/curriculum/general-assets/connect/download-code.webp" alt="Click the download button in the bottom of your screen." style="display: block; max-width: 650px; width: 100%; margin:auto;">
+
+## Setup: Small Screens @showdialog
+
+<img src="https://raw.githubusercontent.com/Forward-Education/pxt-coding-for-good/refs/heads/main/curriculum/general-assets/connect/tutorial-drag.webp" alt="While hovering over the grey bar, click and drag to expand the instruction window." style="display: block; max-width: 650px; width: 100%; margin:auto;">
+
+To use this tutorial with a small screen, hover over the grey bar, then click and drag to expand the instruction window. 
 
 ## Two-Device Setup
 
@@ -75,9 +75,9 @@ Which part of your code is the transmitter?
 
 ~hint Tell Me More!
 
-The ``||radio: Rario Send String ||`` block sends a signal from the micro:bit. 
+The ``||radio: Radio Send String ||`` block sends a signal from the micro:bit. 
 
-Since we've downloaded the same prorgram to both micro:bits, they both transmit their signal.
+Since we've downloaded the same program to both micro:bits, they both transmit their signal.
 
 hint~
 
@@ -215,7 +215,7 @@ In this tutorial, you investigated how a wireless network connects two devices t
 
 You've completed this tutorial! Here's a summary of your program:
 
-- ``||radio:On Received String||``: The **transmitter** sends a beacon ``||variables:Signal||`` every second
+- ``||radio:Send String||``: The **transmitter** sends a beacon ``||variables:Signal||`` every second
 
 - ``||radio:Set Group||``: The **channel** sets the shared group so both devices can communicate
 
