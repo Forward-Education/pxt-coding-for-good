@@ -9,5 +9,3 @@ fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.6
 ```
 
 ## 
-
-This is a template for the tutorial page
