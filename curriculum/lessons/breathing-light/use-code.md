@@ -1,7 +1,7 @@
 # Breathing Light – Finished Use Code
 
 ```package
-fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.8
+fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.1.1
 ```
 
 ```template

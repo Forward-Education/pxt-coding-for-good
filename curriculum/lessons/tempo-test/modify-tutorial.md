@@ -1,7 +1,7 @@
 # Theremin – Modify Tutorial
 
 ```package
-fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.8
+fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.1.1
 ```
 
 ```template
@@ -64,7 +64,7 @@ Click the ``|Download|`` button to download the starter code to your micro:bit.
 
 ## Investigate: How the Program Works
 
-Take a look at the starter code. It should look familiar, this is the exact program you finished in the Use tutorial.
+Take a look at the starter code in your workspace. Can you figure out what each part does?
 
 ~hint Tell Me More!
 
@@ -160,11 +160,23 @@ hint~
 
 You now have two ways to turn distance into sound: your original ``||music:Ring Tone||``, and the new Square wave effect.
 
-Which one made it easier to hear your hand's distance changing clearly? Which one sounded more like a real theremin?
+Ask three or four classmates to listen to both sounds, and tell you which one they prefer, and why. Keep track of their answers.
 
 ~hint Tell Me More!
 
 There's no single right answer! A smooth tone can make small pitch changes easier to notice. A buzzier wave shape can feel more dramatic, but harder to hear precise changes in.
+
+hint~
+
+## Investigate: Did Everyone Agree?
+
+Look at what your classmates told you.
+
+Did everyone prefer the same sound? If people disagreed, what might explain the difference, hearing sensitivity, music taste, or something else entirely?
+
+~hint Tell Me More!
+
+Different people often experience the same sound differently. Collecting a few opinions, instead of just deciding alone, is one way to notice patterns, or disagreements, you might have missed on your own.
 
 hint~
 
@@ -186,7 +198,9 @@ In this tutorial, you **modified** your Theremin Machine to add a new **variable
 
 1. Why didn't anything happen the first time you turned the dial, before you finished this tutorial?
 
-2. If you added a third wave shape, what would you want it to sound like, and when would you want to hear it?
+2. Did your classmates agree on which sound they preferred? What do you think that shows?
+
+3. If you added a third wave shape, what would you want it to sound like, and when would you want to hear it?
 
 ## Congratulations!
 

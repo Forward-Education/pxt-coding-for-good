@@ -1,7 +1,7 @@
 # Field Station – Finished Use Code
 
 ```package
-fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.7
+fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.1.1
 ```
 
 ```template

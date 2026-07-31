@@ -1,7 +1,7 @@
 # Beat Box – Modify Tutorial
 
 ```package
-fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.0.7
+fwd-coding-for-good=github:Forward-Education/pxt-coding-for-good#v1.1.1
 ```
 
 ```template
@@ -107,15 +107,11 @@ hint~
 
 Now let's use the sonar sensor to decide what the layer does.
 
-Inside the ``||loops:Every 5000 ms||`` loop's ``||logic:If On||``, add an ``||logic:If ... else if||`` that checks the sonar:
-
-1. **If** the sonar distance is past **0.2**, **under** (a hand is close)
-
-2. **Else if** the sonar distance is past **0.2**, **over** (nothing close)
+Inside the ``||loops:Every 5000 ms||`` loop's ``||logic:If On||``, add an ``||logic:If||`` that checks: is the sonar distance past **0.2, Under** (a hand is close)?
 
 ~hint Tell Me More!
 
-The sonar measures distance in **metres**, so 0.2 means about 20 cm. "Under 0.2" means something is within 20 cm, like your hand. "Over 0.2" means the space is clear.
+The sonar measures distance in **metres**, so 0.2 means about 20 cm. "Under 0.2" means something is within 20 cm, like your hand.
 
 hint~
 
@@ -125,9 +121,6 @@ loops.everyInterval(5000, function () {
         // @highlight
         if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
 
-        // @highlight
-        } else if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Over)) {
-
         }
     }
 })
@@ -135,17 +128,13 @@ loops.everyInterval(5000, function () {
 
 ## Modify: Layer the Sounds
 
-Give each choice its own sound and colour, played **in background** so your beat keeps going:
+Give your close condition a sound and colour, played **in background** so your beat keeps going: play a high sound and set the ``||fwdLights:LED Ring||`` to cyan.
 
-1. When a hand is **close**: play a high sound and set the ``||fwdLights:LED Ring||`` to cyan
-
-2. When the space is **clear**: play a low sound and set the ``||fwdLights:LED Ring||`` to red
-
-``|Download|`` your code and try it.
+``|Download|`` your code. Hold your hand close, then pull it far away. What happens?
 
 ~hint Tell Me More!
 
-"Play sound **in background**" starts the sound and lets the program keep running, so the layer plays over your beat instead of pausing it.
+When your hand is close, you'll hear the sound and see cyan. When it's far away, nothing happens at all, there's no code yet for what to do when nothing's close.
 
 hint~
 
@@ -157,6 +146,30 @@ loops.everyInterval(5000, function () {
             music.play(music.createSoundExpression(WaveShape.Noise, 500, 499, 255, 0, 750, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.InBackground)
             // @highlight
             fwdLights.ledRing1.setAllPixelsColor(0x00ffff)
+        }
+    }
+})
+```
+
+## Modify: Add the Far Case
+
+Add an ``||logic:Else if||`` that checks if the sonar distance is past **0.2, Over** (nothing close). Play a low sound and set the ``||fwdLights:LED Ring||`` to red.
+
+``|Download|`` and test again, close and far.
+
+~hint Tell Me More!
+
+Now both cases are covered. Testing revealed the missing case, without trying "far away" on purpose, you might not have noticed it was never handled.
+
+hint~
+
+```blocks
+loops.everyInterval(5000, function () {
+    if (On) {
+        if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Under)) {
+            music.play(music.createSoundExpression(WaveShape.Noise, 500, 499, 255, 0, 750, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.InBackground)
+            fwdLights.ledRing1.setAllPixelsColor(0x00ffff)
+        // @highlight
         } else if (fwdSensors.sonar1.isPastThreshold(0.2, fwdEnums.OverUnder.Over)) {
             // @highlight
             music.play(music.createSoundExpression(WaveShape.Noise, 54, 54, 255, 0, 500, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.InBackground)
@@ -176,6 +189,18 @@ What happens to the sound and the ``||fwdLights:LED Ring||`` each time?
 ~hint Tell Me More!
 
 Every 5 seconds the layer checks the sonar once. Hand close: a high sound and a cyan ring. Space clear: a low sound and a red ring. Your beat keeps going the whole time.
+
+hint~
+
+## Investigate: Does This Work for Everyone?
+
+Test your 0.2 metre threshold with a few different people, different heights, arm lengths, or seated versus standing.
+
+Does everyone trigger the "close" sound equally easily? If not, how would you change how you test your device to make sure it works well for people with different reach or mobility?
+
+~hint Tell Me More!
+
+A single threshold assumes everyone reaches the same way. Testing with different people is how you'd catch a design that quietly works better for some than others.
 
 hint~
 
@@ -216,6 +241,8 @@ In this tutorial, you **modified** your Beat Box by adding a second loop that la
 4. How did changing the timer from 5000 to 1000 change how your Beat Box feels?
 
 5. What is one more layer or rule you would add if you kept building this, and what would control it?
+
+6. Why did testing with your hand far away, on purpose, matter before you'd added the far case?
 
 ## Congratulations!
 
